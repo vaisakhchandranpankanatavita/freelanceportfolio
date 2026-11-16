@@ -520,3 +520,5 @@ html.home,html.home body{height:100%;overflow:hidden}
   .wk-filter button{flex:none;font-size:13.5px;padding:4px 0 8px;white-space:nowrap}
 }
 @media (max-width:900px){.wk-filter [role=tablist]{gap:14px;justify-content:space-between}.wk-filter button sup{display:none}}
+/* mobile: the name already headlines the page, so the header shows only the DH badge */
+@media (max-width:900px){.logo span{display:none}.logo b{flex:none;width:40px;height:40px}}
