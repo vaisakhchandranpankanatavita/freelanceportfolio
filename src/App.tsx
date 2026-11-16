@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Header from './components/Header'
+import BottomNav from './components/BottomNav'
 import Hero from './components/Hero'
 import Work from './components/Work'
 import Experience from './components/Experience'
@@ -22,7 +22,6 @@ export default function App() {
   useResumeDownload()
   return (
     <>
-      <Header route={route} />
       <main id="smooth" key={route} className={route === 'home' ? 'is-home' : 'is-page'}>
         {route === 'home' && <Hero />}
         {route === 'work' && <Page route="work"><Work /></Page>}
@@ -30,6 +29,7 @@ export default function App() {
         {route === 'about' && <Page route="about"><About /></Page>}
         {route === 'contact' && <Page route="contact"><Contact /></Page>}
       </main>
+      <BottomNav route={route} />
     </>
   )
 }

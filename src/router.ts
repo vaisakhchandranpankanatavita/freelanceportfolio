@@ -12,9 +12,16 @@ const read = (): Route => {
 export function useRoute() {
   const [route, setRoute] = useState<Route>(read)
   useEffect(() => {
-    const on = () => { scrollTo(0, 0); setRoute(read()) }
+    const on = () => {
+      const next = read()
+      if (next === route) return
+      const update = () => { scrollTo(0, 0); setRoute(next) }
+      const doc = document as Document & { startViewTransition?: (callback: () => void) => unknown }
+      if (doc.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches) doc.startViewTransition(update)
+      else update()
+    }
     addEventListener('hashchange', on)
     return () => removeEventListener('hashchange', on)
-  }, [])
+  }, [route])
   return route
 }
