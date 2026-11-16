@@ -1,4 +1,4 @@
-import photo from '../assets/photo.webp'
+import photo from '../assets/photo.png'
 import { HIGHLIGHTS } from '../data'
 import Split from './Split'
 import Reveal from './Reveal'
