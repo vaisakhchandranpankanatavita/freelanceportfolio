@@ -6,10 +6,10 @@ export const NAV = [
 ]
 
 export const HIGHLIGHTS = [
-  { value: '2', label: 'Patents', sub: 'India 2023 · UK 2025' },
-  { value: '15', label: 'Papers & chapters', sub: 'Springer Nature · IEEE' },
-  { value: '6', label: 'Books & anthologies', sub: 'Published author' },
-  { value: '10th', label: 'Olympiad', sub: 'Teachers’ · 90+ countries' },
+  { value: '2', label: 'Patents granted', sub: 'India 2023, UK 2025' },
+  { value: '15', label: 'Papers and chapters', sub: 'Springer Nature and IEEE' },
+  { value: '6', label: 'Books and anthologies', sub: 'Published author' },
+  { value: '10th', label: 'Teachers’ Olympiad', sub: '90+ countries' },
 ]
 
 export const STATS = [

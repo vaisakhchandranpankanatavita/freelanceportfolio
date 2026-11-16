@@ -24,7 +24,7 @@ export default function Header({ route }: { route: string }) {
         <nav className={`links${open ? ' open' : ''}`} id="links" aria-label="Primary">
           {NAV.map(n => <a key={n.href} href={n.href} className={route === n.route ? 'on' : ''} aria-current={route === n.route ? 'page' : undefined}>{n.label}</a>)}
         </nav>
-        <a className="btn dl mag" href={RESUME} download="Divya-Hariharan-Resume.pdf">Download Resume ↓</a>
+        <a className="btn dl" href={RESUME} download="Divya-Hariharan-Resume.pdf">Download Resume ↓</a>
         <button className="menu" aria-expanded={open} aria-controls="links" onClick={() => setOpen(o => !o)}>Menu</button>
       </div>
     </header>

@@ -20,8 +20,8 @@ export default function Contact() {
             <a className="mail" href={`mailto:${EMAIL}`}>{EMAIL}</a>
             <p className="ph">{PHONE} · Muscat, Oman</p>
             <div className="cta">
-              <button className="btn solid mag" type="button" onClick={copy}>{label}</button>
-              <a className="btn mag" href={RESUME} download="Divya-Hariharan-Resume.pdf">Download Resume ↓</a>
+              <button className="btn solid" type="button" onClick={copy}>{label}</button>
+              <a className="btn" href={RESUME} download="Divya-Hariharan-Resume.pdf">Download Resume ↓</a>
             </div>
           </Reveal>
           <Reveal className="soc">
