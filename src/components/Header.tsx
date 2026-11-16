@@ -20,7 +20,7 @@ export default function Header({ route }: { route: string }) {
   return (
     <header className={`nav${stuck ? ' stuck' : ''}`}>
       <div className="wrap">
-        <a href="#/" className="logo" aria-label="Divya Hariharan, home"><b>DH</b><span>Divya Hariharan</span></a>
+        <a href="#/" className="logo" aria-label="Divya Hariharan, home"><span>Divya Hariharan</span></a>
         <nav className={`links${open ? ' open' : ''}`} id="links" aria-label="Primary">
           {NAV.map(n => <a key={n.href} href={n.href} className={route === n.route ? 'on' : ''} aria-current={route === n.route ? 'page' : undefined}>{n.label}</a>)}
         </nav>

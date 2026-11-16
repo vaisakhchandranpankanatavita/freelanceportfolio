@@ -520,5 +520,7 @@ html.home,html.home body{height:100%;overflow:hidden}
   .wk-filter button{flex:none;font-size:13.5px;padding:4px 0 8px;white-space:nowrap}
 }
 @media (max-width:900px){.wk-filter [role=tablist]{gap:14px;justify-content:space-between}.wk-filter button sup{display:none}}
-/* mobile: the name already headlines the page, so the header shows only the DH badge */
-@media (max-width:900px){.logo span{display:none}.logo b{flex:none;width:40px;height:40px}}
+
+/* header wordmark: refined serif, one line, no badge */
+.logo{font-family:var(--serif);font-weight:500;font-size:clamp(22px,2.2vw,28px);letter-spacing:-.005em;line-height:1;white-space:nowrap;gap:0}
+.logo span{letter-spacing:-.005em;white-space:nowrap}
